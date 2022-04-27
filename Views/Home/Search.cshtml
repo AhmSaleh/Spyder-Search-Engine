@@ -1,0 +1,40 @@
+﻿@{
+    List<string> documents = (List<string>)ViewData["documents"];
+    string query = (string)ViewData["query"];
+    string correction = (string)ViewData["correction"];
+}
+
+@{
+    if (query.Equals(correction))
+    {
+        <h1>
+            Matching documents for <strong> @(query) </strong>
+        </h1>
+        <br />
+        <br />
+    }
+
+    else
+    {
+        <h1>
+            Did you mean <strong> @(correction)</strong>?
+        </h1>
+        <br />
+        <br />
+    }
+}
+
+@if (documents.Count == 0)
+{
+    <p> There are no documents matching your query.</p>
+}
+
+<ul>
+    @foreach (var document in documents)
+    {
+        <li>
+            <a href="@(document)">@(document)</a>
+        </li>
+
+    }
+</ul>

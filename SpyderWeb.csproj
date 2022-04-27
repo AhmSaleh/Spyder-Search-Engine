@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="dotnet-stop-words" Version="1.1.0" />
+    <PackageReference Include="NetSpell" Version="2.1.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NTextCat" Version="0.3.65" />
+    <PackageReference Include="NUglify" Version="1.13.11" />
+    <PackageReference Include="Porter2StemmerStandard" Version="1.1.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+    <PackageReference Include="Unofficial.Microsoft.mshtml" Version="7.0.3300" />
+  </ItemGroup>
+
+</Project>
